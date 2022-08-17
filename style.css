@@ -24,6 +24,7 @@ main{
 nav > label{
     display:flex;
     color:#15191e;
+    transition:color 250ms ease-in-out;
 }
 
 #HJ927IJ9D:checked ~ main nav > label{
