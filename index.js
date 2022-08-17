@@ -1,0 +1,1 @@
+let a=document.querySelector.bind(document),b=a("#a"),d=function({target}){this.setAttribute(target.id,target.value)},e=(c)=>a(c).addEventListener("input",d.bind(b)),c=["#cx","#cy","#rx","#ry"].map(e);
