@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta property='og:title' content='Cellypso'/>
-        <meta property='og:image' content='https://erkela.github.io/preview.png'/>
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="627">
-        <meta property='og:description' content='Une application simple pour voir comment évolue les ellipses en svg.'/>
-        <meta property='og:url' content='https://erkela.github.io/'/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
         <link href="./logo.css" rel="stylesheet">
+        <link href="./base.css" rel="stylesheet">
         <link href="./style.css" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta id="l" name="theme-color" content="#ffcdd2">
     </head>
     <body>
         <input type="checkbox" id="HJ927IJ9D"/>
         <main class="OIHA16427BNX">
-            <section>
-                <header>
-                    <svg id="LMAX82NKB2" class="ZAA726KBD2" viewBox="19.31 9.5 61.38 71" xmlns="http://www.w3.org/2000/svg"><defs><path id="F5G00293" class="F5G00293" d="M30 36A20 20,0,0,1,45 47A 9.8 9.8,0,0,1,30 36"></path><path id="F5G0029" class="F5G00293" d="M30 36A20 20,0,0,1,45 47A 9.8 9.8,0,0,1,30 36"></path><mask id="DFZHDA6265B"><use href="#F5G00293"/></mask><g id="JD8273NJDZA"><use href="#F5G0029" id="AJKCBI7256B"/><path class="IUDJKH72jH8" d="M37 30A20 20,0,0,0,38 45A20 20,0,0,0,37 30"></path></g><radialGradient id="LJDFG62HK932"><stop offset="10%" class="HDUD725LJ09"></stop><stop offset="95%" class="OEI72BH8HJ"></stop></radialGradient></defs><g class="JDUÖP86JKLK6"><path d="M27.5 30.5A 30 30,0,1,0,72.5 30.5A 15 15,0,0,0,68.5 9.5A 20 20,0,0,1,63 23A30 30,0,0,0,37 23A 15 15,0,0,1,32 9.5A 15 15,0,0,0,27.5 30.5Z"></path></g><g class="KDJLI7356ND"><path d="M25 50A30 30,0,0,0,75 50A 25.06 25.06,0,1,1,25 50"></path></g><g><use class="AJKCBI7256B" href="#JD8273NJDZA"></use></g><g class="JDZU8728BHJDK" ><use class="AJKCBI7256B" href="#JD8273NJDZA"></use></g></svg>
-                </header>
-                <svg id="ellipse" viewBox="-10 -10 20 20">
-                    <linearGradient id="circleGradient" gradientUnits="objectBoundingBox" gradientTransform="rotate(90)">
-                      <stop offset="0%"  stop-color="rgba(255,0,0,0.3)"></stop>
-                      <stop offset="100%" stop-color="rgba(255,0,0,0)"></stop>
-                    </linearGradient>
-                    <ellipse id="a" fill="url(#circleGradient)" cx="0" cy="0" rx="2" ry="1"></ellipse>
-                </svg>
-                <nav>
-                    <label>
-                        cx: <input id="cx" type="range" min="-5" max="5" step="0.1" value="0"/>
-                    </label>
-                    <label>
-                        cy: <input id="cy" type="range" min="-5" max="5" step="0.1" value="0"/>
-                    </label>
-                    <label>
-                        rx: <input id="rx" type="range" min="1" max="5" step="0.1" value="2"/>
-                    </label>
-                    <label>
-                        ry: <input id="ry" type="range" min="1" max="5" step="0.1" value="1"/>
-                    </label>
-                </nav>
-            </section>
-            <footer>
+            <div id="asset"><div class="card ">
+                    <div class="titre"><h3>Titre</h3>
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                    </svg>
+                    </div>
+                    <div class="description"><p>Description</p></div>
+                    <div class="time">
+                        <div class="timer">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="dring" class="hdr">
+                        DRING !!!
+                    </div>
+                </div>
+            </div>
+             <footer>
                 <label id="UEYBNX2567N" class="NBDI62B0 PXVGJA5157J ZAA726KBD2 OIHA16427BNX" for="HJ927IJ9D"><div id="PAOJDS652" class="KDBZKA9865BV BKX2S234D72"><div id="NJCBIK8726B" class="KDBZKA9865BV BKX2S234D72 PXVGJA5157J"></div></div></label>
+                <p id="ajout">Ajouter une tâche</p>
             </footer>
+           
+            <section>
+            
+            </section>
+           <div id="create" class="hide">
+                <label tabindex="1">titre:<input id="titre" maxlength="16" type="text" placeholder="mon super titre"/></label>
+                <label tabindex="1">description: <input id="description" maxLength="64" type="text" placeholder="ma super description"/></label>
+                <label tabindex="1" class="m">duration (seconde):<input id="duration" type="number" placeholder="30"/></label>
+                <label>color:
+                    <ul>
+                        <div class="a"></div>
+                        <div class="b"></div>
+                        <div class="c"></div>
+                        <div class="d"></div>
+                        <div class="e"></div>
+                        <div class="f"></div>
+                        <div class="g"></div>
+                        <div class="h"></div>
+                    </ul>
+                </label>
+                <div id="control">
+                <div id="valider">
+                    ajouter la tâche
+                </div>
+                    <div id="annuler">annuler la tâche</div>
+                </div>
+            </div>
+             <header>
+                <svg id="LMAX82NKB2" class="ZAA726KBD2" viewBox="19.31 9.5 61.38 71" xmlns="http://www.w3.org/2000/svg"><defs><path id="F5G00293" class="F5G00293" d="M30 36A20 20,0,0,1,45 47A 9.8 9.8,0,0,1,30 36"></path><path id="F5G0029" class="F5G00293" d="M30 36A20 20,0,0,1,45 47A 9.8 9.8,0,0,1,30 36"></path><mask id="DFZHDA6265B"><use href="#F5G00293"/></mask><g id="JD8273NJDZA"><use href="#F5G0029" id="AJKCBI7256B"/><path class="IUDJKH72jH8" d="M37 30A20 20,0,0,0,38 45A20 20,0,0,0,37 30"></path></g><radialGradient id="LJDFG62HK932"><stop offset="10%" class="HDUD725LJ09"></stop><stop offset="95%" class="OEI72BH8HJ"></stop></radialGradient></defs><g class="JDUÖP86JKLK6"><path d="M27.5 30.5A 30 30,0,1,0,72.5 30.5A 15 15,0,0,0,68.5 9.5A 20 20,0,0,1,63 23A30 30,0,0,0,37 23A 15 15,0,0,1,32 9.5A 15 15,0,0,0,27.5 30.5Z"></path></g><g class="KDJLI7356ND"><path d="M25 50A30 30,0,0,0,75 50A 25.06 25.06,0,1,1,25 50"></path></g><g><use class="AJKCBI7256B" href="#JD8273NJDZA"></use></g><g class="JDZU8728BHJDK" ><use class="AJKCBI7256B" href="#JD8273NJDZA"></use></g></svg>
+                <div id="fullscreen">Fullscreen?</div>
+            </header>
+           
         </main>
         
         <script src="./index.js" type="module"></script>
