@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="theme-color" content="#270948" >
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="./streamrunners.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="frame" id="dark">
+      <nav>
+        <div id="controlleur_caroussel">
+          <button id="precedent">
+            <svg viewBox="0 0 24 24">
+              <path d="M24 24L0 12L24 0L18 12 L24 24Z"></path>
+            </svg>
+          </button>
+          <button id="suivant">
+            <svg viewBox="0 0 24 24">
+              <path d="M24 24L0 12L24 0L18 12 L24 24Z"></path>
+            </svg>
+          </button>
+          <p><span id="page">1</span>/4</p>
+        </div>
+        <button id="close">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="menu" viewBox="0 0 24 24">
+            <use x="0" y="0" href="./icons/menu.svg#close" ></use>
+          </svg>
+        </button>
+      </nav>
+      <div id="composant-explication">
+        
+      </div>
+      <article id="texte-explication">
+        
+      </article>
+    </div>
+    
+    <div class="frame">
+      <nav>
+        <img src="./icons/streamrunners.svg"/>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="menu" viewBox="0 0 24 24">
+          <use x="0" y="0" href="./icons/menu.svg#menu" ></use>
+        </svg>
+      </nav>
+      <main>
+        <div id="accroche" class="center">
+          <p>Découvrez de <span class="s-caps">nouveaux</span> streameurs</p>
+        </div>
+        <searchbox class="center">
+          <input type="search" placeholder="39daph"/>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+              <use x="0" y="0" href="./icons/menu.svg#search"></use>
+            </svg>
+          </button>
+        </searchbox>
+      </main>
+      <footer>
+        <nav id="auth">
+          <button>S'inscrire</button>
+          <button>Se connecter</button>
+        </nav>
+        <button class="showcase">showcase</button>
+      </footer>
+    </div>
+    <script src="streamrunners.js"></script>
+  </body>
+</html>
