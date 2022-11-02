@@ -113,7 +113,7 @@ Caroussel.data = [
     element:null,
     texte:`
     <h3>Introduction</h3>
-    <p>Cette page d'acceuil s'inspire de l'approche minimalistique et directe du site de google.</p><p>Le design est <b>fortement</b> inspiré du dribbble de <span id="experimental"><a href="https://dribbble.com/shots/3339853-Splash-page">uixNinja</a></span>.</p>
+    <p>Cette page d'accueil s'inspire de l'approche minimalistique et directe du site de google.</p><p>Le design est <b>fortement</b> inspiré du dribbble de <span id="experimental"><a href="https://dribbble.com/shots/3339853-Splash-page">uixNinja</a></span>.</p>
 `
   },
   {
